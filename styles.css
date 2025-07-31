@@ -1,0 +1,385 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1b2a;
+  color: #ffffff;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  margin-bottom: 16px;
+  color: #a3cef1;
+}
+
+p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.highlight {
+  color: #a3cef1;
+  font-weight: bold;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #0d1b2a;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #a3cef133;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #a3cef1;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #a3cef1;
+}
+
+/* Hero Section */
+.hero {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #a3cef1;
+  box-shadow: 0 0 15px rgba(163, 206, 241, 0.4);
+}
+
+/* Buttons */
+.btn-download,
+.btn-view,
+.btn-submit {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 12px 24px;
+  background-color: #a3cef1;
+  color: #0d1b2a;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-download:hover,
+.btn-view:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-submit:hover {
+  background-color: #ffffff;
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+  background-color: #0d1b2a;
+}
+
+.section.bg-dark {
+  background-color: #122333;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #a3cef1;
+}
+
+/* Education & Certs */
+.edu-item h3 {
+  color: #a3cef1;
+}
+
+.cert-list li {
+  margin-bottom: 10px;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.skill-card {
+  background-color: #1b324f;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #a3cef1;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: #1b324f;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(163, 206, 241, 0.2);
+}
+
+.tech-tags {
+  margin: 15px 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tech-tags span {
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  background: #a3cef122;
+  color: #a3cef1;
+  border-radius: 12px;
+}
+
+/* Interests */
+.interest-list li {
+  margin-bottom: 12px;
+}
+
+/* Contact */
+.contact-form {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #a3cef1;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a3cef1;
+  border-radius: 6px;
+  background-color: #1b324f;
+  color: #ffffff;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #a3cef1;
+  box-shadow: 0 0 5px rgba(163, 206, 241, 0.5);
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 40px;
+  color: #a3cef1;
+}
+
+.social-links a {
+  color: #a3cef1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0a1420;
+  color: #a3cef1;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-menu {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+/* In styles.css */
+.navbar {
+  background-color: #0d1b2a;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #a3cef133;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-logo img {
+  height: 40px; /* Adjust size as needed */
+  width: auto; /* Maintain aspect ratio */
+  /* Optional: Remove or adjust filter */
+  /* filter: brightness(0) invert(1); */
+}
+
+.nav-name {
+  color: #ffffff; /* White text for visibility */
+  font-size: 16px; /* Adjust as needed */
+  margin-top: 5px; /* Space between logo and name */
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #a3cef1;
+}
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  gap: 4px; /* Space between logo and name */
+}
+
+.nav-logo img {
+  height: 40px;
+  width: auto;
+  /* Remove filter if logo is already light */
+  /* filter: brightness(0) invert(1); */
+}
+
+.nav-logo:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.nav-name {
+  color: #a3cef1; /* Sky Blue from your theme */
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
